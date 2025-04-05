@@ -64,7 +64,7 @@ export class SeasonRankingsRequestBuilder extends PageableRequestBuilder<SeasonR
       this.vRatingRank = builder.#vRatingRank;
     }
 
-    public params(): SeasonRankingsParams {
+    public override params(): SeasonRankingsParams {
       return {
         ...super.params(),
         program: this.program,

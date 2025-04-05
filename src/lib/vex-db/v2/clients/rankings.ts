@@ -79,7 +79,7 @@ export class RankingsRequestBuilder extends PageableRequestBuilder<RankingsReque
       this.ranks = builder.#ranks;
     }
 
-    public params(): RankingsParams {
+    public override params(): RankingsParams {
       return {
         ...super.params(),
         id: this.ids,

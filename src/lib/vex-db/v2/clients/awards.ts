@@ -91,7 +91,7 @@ export class AwardsRequestBuilder extends PageableRequestBuilder<AwardsRequestBu
       this.programIds = builder.#programIds;
     }
 
-    public params(): AwardsParams {
+    public override params(): AwardsParams {
       return {
         ...super.params(),
         id: this.ids,

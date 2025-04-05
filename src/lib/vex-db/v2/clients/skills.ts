@@ -67,7 +67,7 @@ export class SkillsRequestBuilder extends PageableRequestBuilder<SkillsRequestBu
       this.seasonIds = builder.#seasonIds;
     }
 
-    public params(): SkillsParams {
+    public override params(): SkillsParams {
       return {
         ...super.params(),
         event: this.eventIds,

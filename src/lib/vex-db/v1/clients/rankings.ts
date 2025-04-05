@@ -70,7 +70,7 @@ export class RankingsRequestBuilder extends PageableRequestBuilder<RankingsReque
       this.season = builder.#season;
     }
 
-    public params(): RankingsParams {
+    public override params(): RankingsParams {
       return {
         ...super.params(),
         sku: this.eventSku,

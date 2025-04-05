@@ -62,7 +62,7 @@ export class AwardsRequestBuilder extends PageableRequestBuilder<AwardsRequestBu
       this.season = builder.#season;
     }
 
-    public params(): AwardsParams {
+    public override params(): AwardsParams {
       return {
         ...super.params(),
         sku: this.eventSku,

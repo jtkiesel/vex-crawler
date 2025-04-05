@@ -102,7 +102,7 @@ export class EventsRequestBuilder extends PageableRequestBuilder<EventsRequestBu
       this.teamNumber = builder.#teamNumber;
     }
 
-    public params(): EventsParams {
+    public override params(): EventsParams {
       return {
         ...super.params(),
         sku: this.sku,

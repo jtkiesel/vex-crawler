@@ -1,15 +1,15 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
     "declaration": true,
     "declarationMap": true,
     "incremental": true,
     "lib": ["ESNext"],
     "module": "NodeNext",
-    "moduleResolution": "nodenext",
-    "newLine": "lf",
-    "noEmitHelpers": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -18,7 +18,6 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2020",
-    "useDefineForClassFields": true
+    "target": "ES2022"
   }
 }

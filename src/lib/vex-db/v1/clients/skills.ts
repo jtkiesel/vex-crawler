@@ -78,7 +78,7 @@ export class SkillsRequestBuilder extends PageableRequestBuilder<SkillsRequestBu
       this.rank = builder.#rank;
     }
 
-    public params(): SkillsParams {
+    public override params(): SkillsParams {
       return {
         ...super.params(),
         sku: this.eventSku,

@@ -102,7 +102,7 @@ export class TeamsRequestBuilder extends PageableRequestBuilder<TeamsRequestBuil
       this.registrationStatus = builder.#registrationStatus;
     }
 
-    public params(): TeamsParams {
+    public override params(): TeamsParams {
       return {
         ...super.params(),
         team: this.number,

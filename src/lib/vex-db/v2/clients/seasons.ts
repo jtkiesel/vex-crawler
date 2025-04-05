@@ -61,7 +61,7 @@ export class SeasonsRequestBuilder extends PageableRequestBuilder<SeasonsRequest
       this.end = builder.#end;
     }
 
-    public params(): SeasonsParams {
+    public override params(): SeasonsParams {
       return {
         ...super.params(),
         id: this.ids,

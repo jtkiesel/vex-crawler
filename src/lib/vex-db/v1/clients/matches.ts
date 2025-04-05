@@ -110,7 +110,7 @@ export class MatchesRequestBuilder extends PageableRequestBuilder<MatchesRequest
       this.season = builder.#season;
     }
 
-    public params(): MatchesParams {
+    public override params(): MatchesParams {
       return {
         ...super.params(),
         sku: this.eventSku,

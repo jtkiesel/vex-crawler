@@ -84,7 +84,7 @@ export class TeamsRequestBuilder extends PageableRequestBuilder<TeamsRequestBuil
       this.countries = builder.#countries;
     }
 
-    public params(): TeamsParams {
+    public override params(): TeamsParams {
       return {
         ...super.params(),
         id: this.ids,

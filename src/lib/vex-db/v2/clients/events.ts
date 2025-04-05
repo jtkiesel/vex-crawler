@@ -91,7 +91,7 @@ export class EventsRequestBuilder extends PageableRequestBuilder<EventsRequestBu
       this.end = builder.#end;
     }
 
-    public params(): EventsParams {
+    public override params(): EventsParams {
       return {
         ...super.params(),
         id: this.ids,

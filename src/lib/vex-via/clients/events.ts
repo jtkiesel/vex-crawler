@@ -60,7 +60,7 @@ class EventRequestBuilder extends ViaRequestBuilder<
       this.sku = builder.#sku;
     }
 
-    public params(): EventParams {
+    public override params(): EventParams {
       return super.params();
     }
   };
@@ -83,7 +83,7 @@ export class EventsRequestBuilder extends ViaRequestBuilder<
       super(builder);
     }
 
-    public params(): EventsParams {
+    public override params(): EventsParams {
       return super.params();
     }
   };

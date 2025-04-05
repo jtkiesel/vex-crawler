@@ -103,7 +103,7 @@ export class MatchesRequestBuilder extends PageableRequestBuilder<MatchesRequest
       this.numbers = builder.#numbers;
     }
 
-    public params(): MatchesParams {
+    public override params(): MatchesParams {
       return {
         ...super.params(),
         event: this.eventIds,

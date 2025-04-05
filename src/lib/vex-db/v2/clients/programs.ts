@@ -41,7 +41,7 @@ export class ProgramsRequestBuilder extends PageableRequestBuilder<ProgramsReque
       this.names = builder.#names;
     }
 
-    public params(): ProgramsParams {
+    public override params(): ProgramsParams {
       return { ...super.params(), id: this.ids, names: this.names };
     }
   };
